@@ -19,10 +19,6 @@ public class UserEntity {
     @Column(name = "pass")
     private String password;
 
-    @OneToMany(cascade = CascadeType.REFRESH,fetch = FetchType.LAZY)
-    @JoinColumn(name = "user_topic_id")
-    private List<TopicEntity> topics;
-
     public String getEmail() {
         return email;
     }
@@ -38,10 +34,6 @@ public class UserEntity {
     public void setPassword(String password) {
         this.password = password;
     }
-
-    public List<TopicEntity> getTopics() { return topics; }
-
-    public void setTopics(List<TopicEntity> topics) {this.topics = topics;}
 
     public Integer getId() {
         return id;

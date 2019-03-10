@@ -32,4 +32,5 @@
     </bean>
     <tx:annotation-driven/>
     <bean id="userService" class="ua.com.iam.dao.service.UserServiceImpl"/>
+    <bean id="topicService" class="ua.com.iam.dao.service.TopicServiceImpl"/>
 </beans>

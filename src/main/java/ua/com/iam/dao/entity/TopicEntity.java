@@ -15,6 +15,7 @@ public class TopicEntity {
     private String name;
 
     @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "user_topic_id")
     private UserEntity owner;
 
     public Integer getId() {
